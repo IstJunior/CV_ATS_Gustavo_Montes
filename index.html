@@ -5,25 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Gustavo Junior Montes Marrugo</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Íconos Font Awesome -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+  <!-- Menú lateral -->
+  <nav id="sideMenu">
+    <a href="#perfil" title="Perfil"><i class="fa-solid fa-user"></i></a>
+    <a href="#formacion" title="Formación"><i class="fa-solid fa-graduation-cap"></i></a>
+    <a href="#experiencia" title="Experiencia"><i class="fa-solid fa-briefcase"></i></a>
+    <a href="#competencias" title="Competencias"><i class="fa-solid fa-toolbox"></i></a>
+    <a href="#certificaciones" title="Certificaciones"><i class="fa-solid fa-certificate"></i></a>
+    <a href="#contacto" title="Contacto"><i class="fa-solid fa-envelope"></i></a>
+  </nav>
+
+  <!-- Encabezado -->
   <header>
     <h1>Gustavo Junior Montes Marrugo</h1>
     <p>Bogotá D.C. | <a href="mailto:IstJuniorx@gmail.com">IstJuniorx@gmail.com</a> | +57 305 872 1675</p>
   </header>
 
+  <!-- Contenido principal -->
   <main>
-    <!-- PERFIL -->
-    <section>
+    <!-- Perfil -->
+    <section id="perfil">
       <h2><i class="fa-solid fa-user"></i> Perfil Profesional</h2>
       <p>Profesional en Ingeniería de Sistemas en formación, con experiencia en administración de infraestructura TI, seguridad informática y soporte técnico. Manejo de Active Directory, Google Workspace, servicios DNS, firewalls y configuración de servidores Linux y Windows. Competente en automatización de procesos y cumplimiento de normativas como ISO 9001. Apasionado por la ciberseguridad, los contenedores y la mejora continua en entornos tecnológicos.</p>
     </section>
 
-    <!-- FORMACIÓN -->
-    <section>
+    <!-- Formación -->
+    <section id="formacion">
       <h2><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
       <ul>
         <li><strong>Ingeniería de Sistemas</strong> | CUN | Abr 2022 – En curso</li>
@@ -34,25 +46,23 @@
       </ul>
     </section>
 
-    <!-- EXPERIENCIA -->
-    <section>
+    <!-- Experiencia -->
+    <section id="experiencia">
       <h2><i class="fa-solid fa-briefcase"></i> Experiencia Laboral</h2>
-
       <article>
         <h3><i class="fa-solid fa-server"></i> Analista de Soporte e Infraestructura | Grupo Soluciones Horizonte</h3>
         <p><i class="fa-regular fa-calendar-days"></i> Abr 2024 – Actualidad</p>
         <ul>
-          <li><i class="fa-solid fa-users-gear"></i> Administración de Active Directory y políticas de grupo (GPO).</li>
-          <li><i class="fa-solid fa-network-wired"></i> Gestión de DHCP y recursos compartidos en Windows Server.</li>
-          <li><i class="fa-brands fa-ubuntu"></i> Administración de servidores Linux (Debian, CentOS, Ubuntu).</li>
-          <li><i class="fa-solid fa-database"></i> Automatización de respaldos y consultas SQL básicas.</li>
-          <li><i class="fa-solid fa-shield-halved"></i> Administración de firewall Sophos y políticas de seguridad DLP.</li>
-          <li><i class="fa-solid fa-cloud"></i> Gestión de Google Workspace: usuarios, alias y políticas de seguridad.</li>
-          <li><i class="fa-solid fa-robot"></i> Chatbot corporativo en WhatsApp Business.</li>
-          <li><i class="fa-solid fa-boxes-stacked"></i> Soluciones On-Premise: GLPI, Odoo, WordPress.</li>
+          <li>Administración de Active Directory y GPO.</li>
+          <li>Gestión de DHCP y recursos compartidos en Windows Server.</li>
+          <li>Administración de servidores Linux (Debian, CentOS, Ubuntu).</li>
+          <li>Automatización de respaldos y consultas SQL básicas.</li>
+          <li>Gestión de firewall Sophos y políticas de seguridad DLP.</li>
+          <li>Google Workspace: usuarios, alias, dominios y seguridad.</li>
+          <li>Chatbot corporativo en WhatsApp Business.</li>
+          <li>Soluciones On-Premise: GLPI, Odoo, WordPress.</li>
         </ul>
       </article>
-
       <article>
         <h3><i class="fa-solid fa-computer"></i> Auxiliar de Soporte Técnico | Uniminuto</h3>
         <p><i class="fa-regular fa-calendar-days"></i> Ago 2022 – Abr 2024</p>
@@ -63,7 +73,6 @@
           <li>Soporte remoto y presencial a usuarios.</li>
         </ul>
       </article>
-
       <article>
         <h3><i class="fa-solid fa-code"></i> Aprendiz de Desarrollo de Software | Mentius S.A.S.</h3>
         <p><i class="fa-regular fa-calendar-days"></i> Sep 2021 – Mar 2022</p>
@@ -75,22 +84,21 @@
       </article>
     </section>
 
-    <!-- COMPETENCIAS -->
-    <section>
+    <!-- Competencias -->
+    <section id="competencias">
       <h2><i class="fa-solid fa-toolbox"></i> Competencias Técnicas</h2>
       <ul>
-        <li><i class="fa-solid fa-server"></i> Active Directory, Google Workspace, VMware ESXi</li>
-        <li><i class="fa-brands fa-linux"></i> Administración de servidores Linux/Windows</li>
-        <li><i class="fa-solid fa-globe"></i> DNS, Apache, Nginx y sitios web</li>
-        <li><i class="fa-solid fa-fire-flame-curved"></i> Firewalls Sophos</li>
-        <li><i class="fa-solid fa-terminal"></i> Automatización Bash y scripting</li>
-        <li><i class="fa-solid fa-shield-alt"></i> Seguridad informática e ISO 9001</li>
-        <li><i class="fa-solid fa-headset"></i> Gestión de incidencias y soporte TI</li>
+        <li>Active Directory, Google Workspace, VMware ESXi</li>
+        <li>Linux/Windows Server, DNS, Apache, Nginx</li>
+        <li>Firewalls Sophos y políticas de seguridad</li>
+        <li>Automatización Bash y scripting</li>
+        <li>Seguridad informática e ISO 9001</li>
+        <li>Gestión de incidencias TI</li>
       </ul>
     </section>
 
-    <!-- CERTIFICACIONES -->
-    <section>
+    <!-- Certificaciones -->
+    <section id="certificaciones">
       <h2><i class="fa-solid fa-certificate"></i> Cursos y Certificaciones</h2>
       <ul>
         <li>Cloud Computing Certified Associate | ITCertificate | Jul 2025</li>
@@ -103,8 +111,8 @@
       </ul>
     </section>
 
-    <!-- CONTACTO -->
-    <section>
+    <!-- Contacto -->
+    <section id="contacto">
       <h2><i class="fa-solid fa-envelope"></i> Contacto</h2>
       <ul>
         <li><i class="fa-solid fa-at"></i> Email: <a href="mailto:IstJuniorx@gmail.com">IstJuniorx@gmail.com</a></li>
@@ -118,6 +126,6 @@
     <p>© 2025 Gustavo Junior Montes Marrugo | Todos los derechos reservados</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
