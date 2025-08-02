@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth; /* scroll suave */
 }
 
 body {
@@ -14,17 +15,6 @@ body {
   line-height: 1.7;
   font-size: 16px;
   transition: background 0.3s, color 0.3s;
-}
-
-/* ===== Enlaces ===== */
-a {
-  color: #58a6ff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #1f6feb;
 }
 
 /* ===== Header ===== */
@@ -60,7 +50,7 @@ main {
 
 /* ===== Secciones ===== */
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -107,9 +97,35 @@ ul li::before {
   font-size: 1rem;
 }
 
-/* Hover futurista */
 ul li:hover {
   color: #58a6ff;
+}
+
+/* ===== Menú Lateral ===== */
+nav {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #161b22;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(88,166,255,0.2);
+  z-index: 1000;
+}
+
+nav a {
+  color: #8b949e;
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover, nav a.active {
+  color: #58a6ff;
+  transform: scale(1.2);
 }
 
 /* ===== Footer ===== */
@@ -145,5 +161,18 @@ body.light-mode h2 {
 }
 
 body.light-mode ul li::before {
+  color: #0a192f;
+}
+
+body.light-mode nav {
+  background: #e3e6ea;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode nav a {
+  color: #444;
+}
+
+body.light-mode nav a.active {
   color: #0a192f;
 }
